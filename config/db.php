@@ -10,7 +10,9 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    // En production, on ne devrait pas afficher l'erreur brute
+    if ($e->getCode() == 1049) {
+        die("La base de données n'existe pas. Veuillez lancer le script d'installation : <a href='setup.php'>setup.php</a>");
+    }
     die("Erreur de connexion : " . $e->getMessage());
 }
 ?>

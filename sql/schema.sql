@@ -69,3 +69,9 @@ INSERT INTO categories (name, gender) VALUES
 ('Chapeau', 'Femme'), ('Sac', 'Femme'), ('Jupe', 'Femme'), ('Culotte', 'Femme'),
 ('Chemise', 'Homme'), ('Ensemble', 'Homme'), ('Vêtement de plage', 'Homme'),
 ('Peluche', 'Enfant'), ('Vêtements unisexes', 'Enfant'), ('Chaussettes', 'Enfant');
+
+-- Insert some products for demonstration
+INSERT INTO products (category_id, name, description, price, stock, image_url, sizes, colors, lengths, wool_types) VALUES
+(1, 'Top Futuriste Néon', 'Un top en crochet avec des fils réfléchissants pour un look 2025.', 25000, 10, 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=800&q=80', 'S,M,L', 'Bleu Néon,Rose,Noir', 'Courte', 'Coton,Acrylique'),
+(2, 'Robe Longue Galactique', 'Robe longue élégante faite main avec des motifs géométriques.', 45000, 5, 'https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=800&q=80', 'M,L', 'Blanc,Argent', 'Longue', 'Velours,Coton'),
+(9, 'Chemise Crochet Homme', 'Chemise légère et respirante pour les soirées d\'été.', 30000, 8, 'https://images.unsplash.com/photo-1523381235212-d73f41380482?auto=format&fit=crop&w=800&q=80', 'M,L,XL', 'Beige,Marron', 'Courte', 'Coton');

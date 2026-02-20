@@ -1,0 +1,4 @@
+vendor/
+composer.lock
+php_check.txt
+php_server.log
